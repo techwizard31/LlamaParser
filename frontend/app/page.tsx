@@ -21,9 +21,6 @@ export default function Home() {
         "https://llamaparser-production.up.railway.app/convert-pdf",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
           body: formData,
         }
       );
