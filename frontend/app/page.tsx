@@ -17,7 +17,7 @@ export default function Home() {
       const formData = new FormData()
       formData.append('file', file)
 
-      const response = await fetch('https://llamaparser-production.up.railway.app:8000/convert-pdf', {
+      const response = await fetch('https://llamaparser-production.up.railway.app/convert-pdf', {
         method: 'POST',
         body: formData,
       })
