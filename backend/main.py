@@ -13,7 +13,7 @@ app = FastAPI(title="PDF to Markdown Converter", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Next.js default port
+    allow_origins=["https://llama-parser.vercel.app/"],  # Next.js default port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
